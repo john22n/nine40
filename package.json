@@ -1,0 +1,50 @@
+{
+  "name": "nine40",
+  "version": "1.0.0",
+  "description": "jrs website",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build --public-url ./dist src/index.html",
+    "dev": "parcel src/index.html",
+    "start": "npm -s run build && nodemon --exec babel-node server/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john22n/nine40.git"
+  },
+  "keywords": [
+    "reactjs",
+    "nodejs",
+    "nine40"
+  ],
+  "author": "John Noriega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john22n/nine40/issues"
+  },
+  "homepage": "https://github.com/john22n/nine40#readme",
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@loadable/babel-plugin": "^5.12.0",
+    "@loadable/component": "^5.12.0",
+    "@reach/router": "^1.3.1",
+    "babel-cli": "^6.26.0",
+    "emotion": "^10.0.27",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@testing-library/react": "^10.0.2",
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.2"
+  }
+}
